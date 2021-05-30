@@ -10,11 +10,16 @@ import {    Container,
             AreaDescriptionSecondBlock,
             DescriptionSecondBlock,
             ThirdBlock, 
-            TitleThirdBlock} from '../styles/pages/Home';
+            TitleThirdBlock,
+            AreaDescriptionThirdBlock,
+            Button,
+            Whatsapp, } from '../styles/pages/Home';
 import Header from '../components/Header';
 import Img from '../assets/LogoOff.jpeg';
 import UpBotton from '../components/UpButton';
 import Footer from '../components/Footer';
+import Card from '../components/Card';
+import Data from '../data/CardInfo';
 
 const Home = ()=>{
     return(
@@ -71,6 +76,23 @@ const Home = ()=>{
                     id='services'
                 >
                     <TitleThirdBlock>PRINCIPAIS ÁREAS DE ATUAÇÃO</TitleThirdBlock>
+                    <AreaDescriptionThirdBlock>
+                        {
+                            Data.map(itens => {
+                                return(
+                                    <Card
+                                        image={itens.image}
+                                        text={itens.text}
+                                    />
+                                );
+                            })
+                        }
+                    </AreaDescriptionThirdBlock>
+                    <Whatsapp>
+                        <Button href="https://web.whatsapp.com/send?phone=5584933463760" target="_blank">
+                            SOLICITE SEU ORÇAMENTO
+                        </Button>
+                    </Whatsapp>
                 </ThirdBlock>
             </Content>
             <UpBotton/>

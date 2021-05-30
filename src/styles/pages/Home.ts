@@ -43,14 +43,14 @@ export const FirstBlocText = styled(motion.h1)`
     margin-top: 30px;
     text-align: center;
 `;
-export const SecondBlock = styled.div`
+export const SecondBlock = styled(motion.div)`
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
     padding: 30px 10px;
     width: 100%;
-    height: 500px;
+    height: 100vh;
     background-color: #fff;
 `;
 export const TextAreaSecondBlock = styled.nav`

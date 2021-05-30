@@ -9,8 +9,8 @@ const Header = ()=>{
         <Container>
             <Menu>
                 <ButtonMenu href='/'>INÍCIO</ButtonMenu>
-                <ButtonMenu href="#sobre">SOBRE</ButtonMenu>
-                <ButtonMenu>SERVIÇOS</ButtonMenu>
+                <ButtonMenu href="#about">SOBRE</ButtonMenu>
+                <ButtonMenu href='#services'>SERVIÇOS</ButtonMenu>
                 <ButtonMenu>CLIENTES</ButtonMenu>
             </Menu>
         </Container>

@@ -10,10 +10,11 @@ import {    Container,
             AreaDescriptionSecondBlock,
             DescriptionSecondBlock,
             ThirdBlock, 
-            TitleThirdBlock} from '../styles/pages/Home'
+            TitleThirdBlock} from '../styles/pages/Home';
 import Header from '../components/Header';
 import Img from '../assets/LogoOff.jpeg';
 import UpBotton from '../components/UpButton';
+import Footer from '../components/Footer';
 
 const Home = ()=>{
     return(
@@ -57,7 +58,7 @@ const Home = ()=>{
                     </FirstBlocText>
                 </FirstBlock>
                 <SecondBlock>
-                    <TextAreaSecondBlock id='sobre'>
+                    <TextAreaSecondBlock id='about'>
                         <TitleSecondBlock>SOBRE</TitleSecondBlock>
                     </TextAreaSecondBlock>
                     <AreaDescriptionSecondBlock>
@@ -66,11 +67,14 @@ const Home = ()=>{
                         </DescriptionSecondBlock>
                     </AreaDescriptionSecondBlock>
                 </SecondBlock>
-                <ThirdBlock>
+                <ThirdBlock
+                    id='services'
+                >
                     <TitleThirdBlock>PRINCIPAIS ÁREAS DE ATUAÇÃO</TitleThirdBlock>
                 </ThirdBlock>
             </Content>
             <UpBotton/>
+            <Footer/>
         </Container>
     );
 }

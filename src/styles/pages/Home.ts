@@ -158,3 +158,51 @@ export const Button = styled.a`
         }
     }
 `;
+export const FourthBlock = styled.div`
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 40px 0;
+    background-color: #353535;
+    border-bottom: solid 1px #fff;
+`;
+export const TitleFourthBlock = styled.h2`
+    font-size: 30px;
+    margin-bottom: 80px;
+    text-align: center;
+    color: #fff;
+    @media(max-width: 765px){
+        font-size: 25px;
+        margin-bottom: 40px;
+    }
+`;
+export const AreaImage = styled.div`
+    display: grid;
+    grid-gap: 80px;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin-bottom: 70px;
+    padding: 0 10px;
+    @media(max-width: 1100px){
+        display: grid;
+        grid-gap: 60px;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    @media(max-width: 768px){
+        display: grid;
+        grid-gap: 40px;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    }
+`;
+export const ImagesFourthBlock = styled(motion.img)`
+    width: 180px;
+    height: 180px;
+    @media(max-width: 768px){
+        width: 100px;
+        height: 100px;
+    }
+`;

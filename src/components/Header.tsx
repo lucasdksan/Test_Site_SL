@@ -14,7 +14,7 @@ const Header = ()=>{
                 <ButtonMenu href='/'>INÍCIO</ButtonMenu>
                 <ButtonMenu onClick={()=>Scroll(665)}>SOBRE</ButtonMenu>
                 <ButtonMenu onClick={()=>Scroll(1325)}>SERVIÇOS</ButtonMenu>
-                <ButtonMenu>CLIENTES</ButtonMenu>
+                <ButtonMenu onClick={()=>Scroll(1990)}>CLIENTES</ButtonMenu>
             </Menu>
         </Container>
     );

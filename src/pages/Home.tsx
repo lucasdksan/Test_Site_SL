@@ -13,13 +13,18 @@ import {    Container,
             TitleThirdBlock,
             AreaDescriptionThirdBlock,
             Button,
-            Whatsapp, } from '../styles/pages/Home';
+            Whatsapp,
+            FourthBlock,
+            TitleFourthBlock,
+            ImagesFourthBlock,
+            AreaImage, } from '../styles/pages/Home';
 import Header from '../components/Header';
 import Img from '../assets/LogoOff.jpeg';
 import UpBotton from '../components/UpButton';
 import Footer from '../components/Footer';
 import Card from '../components/Card';
 import Data from '../data/CardInfo';
+import DataPath from '../data/PathImages';
 
 const Home = ()=>{
     return(
@@ -94,6 +99,21 @@ const Home = ()=>{
                         </Button>
                     </Whatsapp>
                 </ThirdBlock>
+                <FourthBlock>
+                    <TitleFourthBlock>EMPRESAS QUE CONFIAM NO NOSSO TRABALHO</TitleFourthBlock>
+                    <AreaImage>
+                        {
+                            DataPath.map(itens =>{
+                                return (
+                                    <ImagesFourthBlock
+                                        src={itens}
+                                        key={itens}
+                                    />
+                                );
+                            })
+                        }
+                    </AreaImage>
+                </FourthBlock>
             </Content>
             <UpBotton/>
             <Footer/>

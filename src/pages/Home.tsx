@@ -87,8 +87,8 @@ const Home = ()=>{
                         </DescriptionSecondBlock>
                         <Lottie
                             options={defaultOptions}
-                            height={350}
-                            width={350}
+                            height={300}
+                            width={385}
                         />
                     </AreaDescriptionSecondBlock>
                 </SecondBlock>

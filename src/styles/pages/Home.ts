@@ -48,7 +48,7 @@ export const SecondBlock = styled(motion.div)`
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
-    padding: 30px 10px;
+    padding: 30px 5px;
     width: 100%;
     height: 100vh;
     background-color: #fff;
@@ -75,7 +75,7 @@ export const AreaDescriptionSecondBlock = styled.div`
     flex-direction: row;
     width: 100%;
     height: 100%;
-    padding: 10px 180px;
+    padding: 10px 175px;
 `;
 export const DescriptionSecondBlock = styled.div`
     text-align: justify;
@@ -83,7 +83,7 @@ export const DescriptionSecondBlock = styled.div`
     font-family: Arial, Helvetica, sans-serif;
     line-height: 30px;
     flex: 1;
-    margin-right: 50px;
+    margin-right: 20px;
 `;
 export const ThirdBlock = styled.div`
     display: flex;

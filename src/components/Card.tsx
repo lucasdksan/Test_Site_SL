@@ -18,6 +18,10 @@ const Card: React.FC<Props> = ({image, text})=>{
                 whileHover={{
                     scale: 0.8,
                 }}
+                transition={{
+                    type: 'spring',
+                    stiffness: 200
+                }}
             />
             <Txt>{text.txt1}</Txt>
             <Txt>{text.txt2}</Txt>

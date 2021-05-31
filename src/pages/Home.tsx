@@ -27,6 +27,7 @@ import {    Container,
     TitleFourthBlock,
     ImagesFourthBlock,
     AreaImage, } from '../styles/pages/Home';
+import { SSL_OP_NO_TLSv1_1 } from 'constants';
 
 const Home = ()=>{
     const defaultOptions = {
@@ -123,6 +124,10 @@ const Home = ()=>{
                                     <ImagesFourthBlock
                                         src={itens}
                                         key={itens}
+                                        whileHover={{
+                                            scale: 1.1,
+                                            cursor: 'pointer',
+                                        }}
                                     />
                                 );
                             })

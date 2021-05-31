@@ -83,7 +83,7 @@ export const DescriptionSecondBlock = styled.div`
     font-family: Arial, Helvetica, sans-serif;
     line-height: 30px;
     flex: 1;
-    margin-right: 20px;
+    margin-right: 25px;
 `;
 export const ThirdBlock = styled.div`
     display: flex;

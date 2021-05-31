@@ -1,32 +1,42 @@
 import React from 'react';
-import {    Container, 
-            Content, 
-            FirstBlock, 
-            FirstBlockImg,
-            FirstBlocText,
-            SecondBlock,
-            TextAreaSecondBlock,
-            TitleSecondBlock,
-            AreaDescriptionSecondBlock,
-            DescriptionSecondBlock,
-            ThirdBlock, 
-            TitleThirdBlock,
-            AreaDescriptionThirdBlock,
-            Button,
-            Whatsapp,
-            FourthBlock,
-            TitleFourthBlock,
-            ImagesFourthBlock,
-            AreaImage, } from '../styles/pages/Home';
 import Header from '../components/Header';
+import Lottie from 'react-lottie';
 import Img from '../assets/LogoOff.jpeg';
 import UpBotton from '../components/UpButton';
 import Footer from '../components/Footer';
 import Card from '../components/Card';
 import Data from '../data/CardInfo';
 import DataPath from '../data/PathImages';
+import Animation from '../assets/icons/Business.json';
+import {    Container, 
+    Content, 
+    FirstBlock, 
+    FirstBlockImg,
+    FirstBlocText,
+    SecondBlock,
+    TextAreaSecondBlock,
+    TitleSecondBlock,
+    AreaDescriptionSecondBlock,
+    DescriptionSecondBlock,
+    ThirdBlock, 
+    TitleThirdBlock,
+    AreaDescriptionThirdBlock,
+    Button,
+    Whatsapp,
+    FourthBlock,
+    TitleFourthBlock,
+    ImagesFourthBlock,
+    AreaImage, } from '../styles/pages/Home';
 
 const Home = ()=>{
+    const defaultOptions = {
+        loop: true,
+        autoplay: true,
+        animationData: Animation,
+        rendererSettings: {
+            preserveAspectRatio: 'xMidYMid slice'
+        }
+    }
     return(
         <Container>
             <Header/>
@@ -73,8 +83,13 @@ const Home = ()=>{
                     </TextAreaSecondBlock>
                     <AreaDescriptionSecondBlock>
                         <DescriptionSecondBlock>
-                            Rutrum tempor viverra condimentum est senectus ultricies ac nam rhoncus euismod hac, sapien cras ornare proin netus quisque adipiscing lacinia habitasse penatibus. Per pulvinar vitae curae luctus donec amet class habitant sed, nullam conubia nisi himenaeos turpis elit penatibus lacinia aenean nulla, blandit phasellus neque quisque varius commodo odio ipsum. Hac quam malesuada donec facilisi natoque eros vel cursus lacinia, pulvinar adipiscing ac tortor ut suscipit phasellus elementum ultricies nostra, potenti convallis vestibulum ullamcorper nibh aliquam nisl feugiat. Dignissim vestibulum per mus volutpat nibh, pulvinar sed adipiscing sagittis, tristique pellentesque curabitur praesent. Nascetur placerat velit congue parturient fusce cubilia, condimentum scelerisque leo venenatis morbi.
+                        Surge a reformulação do nome, assumindo a marca do nosso sobrenome no mercado. Permanecendo o mesmo dinamismo, eficiência e as melhores soluções. Atuando desde 2017 em construção pesada, a Silva & Lima oferece serviços em diversas áreas como: Elaboração de projetos arquitetônicos, Elaboração projetos de reforma/ampliação. Elaboração de projetos elétricos, hidráulicos e estruturais. Elo fundamental para a consolidação de sua atuação na prestação de serviços. A Silva & Lima possui o compromisso de viabilizar condições para atender os nossos clientes e parceiros, assegurando a qualidade contratada e o cronograma estipulado. Garantimos esse compromisso priorizando a disponibilização de equipamentos novos, modernos e empregando mão-de-obra qualificada para atendimento de cada necessidade.
                         </DescriptionSecondBlock>
+                        <Lottie
+                            options={defaultOptions}
+                            height={350}
+                            width={350}
+                        />
                     </AreaDescriptionSecondBlock>
                 </SecondBlock>
                 <ThirdBlock

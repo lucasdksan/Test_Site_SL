@@ -70,18 +70,20 @@ export const TitleSecondBlock = styled.h1`
 `;
 export const AreaDescriptionSecondBlock = styled.div`
     display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    flex-direction: row;
     width: 100%;
     height: 100%;
-    padding: 10px 250px;
+    padding: 10px 180px;
 `;
 export const DescriptionSecondBlock = styled.div`
     text-align: justify;
     font-size: 20px;
     font-family: Arial, Helvetica, sans-serif;
     line-height: 30px;
+    flex: 1;
+    margin-right: 50px;
 `;
 export const ThirdBlock = styled.div`
     display: flex;

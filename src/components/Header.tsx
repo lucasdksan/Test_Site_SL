@@ -5,12 +5,15 @@ import { Container,
     } from '../styles/components/Header';
 
 const Header = ()=>{
+    function Scroll(value:number){
+        window.scrollTo({top: value, behavior: 'smooth'});
+    }
     return(
         <Container>
             <Menu>
                 <ButtonMenu href='/'>INÍCIO</ButtonMenu>
-                <ButtonMenu href="#about">SOBRE</ButtonMenu>
-                <ButtonMenu href='#services'>SERVIÇOS</ButtonMenu>
+                <ButtonMenu onClick={()=>Scroll(665)}>SOBRE</ButtonMenu>
+                <ButtonMenu onClick={()=>Scroll(1325)}>SERVIÇOS</ButtonMenu>
                 <ButtonMenu>CLIENTES</ButtonMenu>
             </Menu>
         </Container>

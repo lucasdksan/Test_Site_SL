@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import Header from '../components/Header';
 import Img from '../assets/LogoOff.jpeg';
 import UpBotton from '../components/UpButton';
@@ -27,6 +27,7 @@ import {    Container,
             TitleFourthBlock,
             ImagesFourthBlock,
             AreaImage, } from '../styles/pages/Home';
+import { useWindowScroll } from 'react-use';
 
 const Home = ()=>{
     const defaultOptions = {
@@ -35,6 +36,61 @@ const Home = ()=>{
         animationData: Animation,
         rendererSettings: {
             preserveAspectRatio: 'xMidYMid slice'
+        }
+    }
+    function SecondBlockAnimate(){
+        const { y: pageYOffset } = useWindowScroll();
+        let width = window.innerWidth;
+        console.log(window.innerWidth);
+        const [ scaleX, setScaleX ] = useState<number>(365);
+        const [ scaleY, setScaleY ] = useState<number>(300);
+        useEffect(()=>{
+            if(window.innerWidth <= 1050){
+                setScaleX(200);
+                setScaleY(150);
+            }
+        },[width]);
+        if(pageYOffset >= 150){
+            return(
+                <SecondBlock
+                    initial={{
+                        y: 200,
+                        opacity: 0,
+                    }}
+                    animate={{
+                        y: 0,
+                        opacity: [0, 0.2, 0.5, 0.8, 1],
+                    }}
+                    transition={{
+                        type: 'spring',
+                        stiffness: 40,
+                    }}
+                >
+                    <TextAreaSecondBlock id='about'>
+                        <TitleSecondBlock>SOBRE</TitleSecondBlock>
+                    </TextAreaSecondBlock>
+                    <AreaDescriptionSecondBlock>
+                        <DescriptionSecondBlock>
+                            Surge a reformulação do nome, assumindo a marca do nosso sobrenome no mercado. Permanecendo o mesmo dinamismo, eficiência e as melhores soluções. Atuando desde 2017 em construção pesada, a Silva & Lima oferece serviços em diversas áreas como: Elaboração de projetos arquitetônicos, Elaboração projetos de reforma/ampliação. Elaboração de projetos elétricos, hidráulicos e estruturais. Elo fundamental para a consolidação de sua atuação na prestação de serviços. A Silva & Lima possui o compromisso de viabilizar condições para atender os nossos clientes e parceiros, assegurando a qualidade contratada e o cronograma estipulado. Garantimos esse compromisso priorizando a disponibilização de equipamentos novos, modernos e empregando mão-de-obra qualificada para atendimento de cada necessidade.
+                        </DescriptionSecondBlock>
+                        <Lottie
+                            options={defaultOptions}
+                            height={scaleY}
+                            width={scaleX}
+                            style={{
+                                marginLeft: 10,
+                            }}
+                        />
+                    </AreaDescriptionSecondBlock>
+                </SecondBlock>
+            );
+        }
+        else {
+            return(
+                <SecondBlock>
+
+                </SecondBlock>
+            );
         }
     }
     return(
@@ -77,24 +133,9 @@ const Home = ()=>{
                         Participações em Projetos de Arquitetura, Urbanismo e Construções Civis
                     </FirstBlocText>
                 </FirstBlock>
-                <SecondBlock>
-                    <TextAreaSecondBlock id='about'>
-                        <TitleSecondBlock>SOBRE</TitleSecondBlock>
-                    </TextAreaSecondBlock>
-                    <AreaDescriptionSecondBlock>
-                        <DescriptionSecondBlock>
-                            Surge a reformulação do nome, assumindo a marca do nosso sobrenome no mercado. Permanecendo o mesmo dinamismo, eficiência e as melhores soluções. Atuando desde 2017 em construção pesada, a Silva & Lima oferece serviços em diversas áreas como: Elaboração de projetos arquitetônicos, Elaboração projetos de reforma/ampliação. Elaboração de projetos elétricos, hidráulicos e estruturais. Elo fundamental para a consolidação de sua atuação na prestação de serviços. A Silva & Lima possui o compromisso de viabilizar condições para atender os nossos clientes e parceiros, assegurando a qualidade contratada e o cronograma estipulado. Garantimos esse compromisso priorizando a disponibilização de equipamentos novos, modernos e empregando mão-de-obra qualificada para atendimento de cada necessidade.
-                        </DescriptionSecondBlock>
-                        <Lottie
-                            options={defaultOptions}
-                            height={300}
-                            width={385}
-                            style={{
-                                marginLeft: 10,
-                            }}
-                        />
-                    </AreaDescriptionSecondBlock>
-                </SecondBlock>
+                {
+                    SecondBlockAnimate()
+                }
                 <ThirdBlock
                     id='services'
                 >

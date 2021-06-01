@@ -129,7 +129,7 @@ export const Button = styled.a`
     -webkit-transition: all 0.5s;
     transition: all 0.5s;
     transition-property: transform;
-    transform: scale(1.3);
+    transform: scale(1.2);
     background-color: #353535;
     color: #fff;
     border-radius: 10px;

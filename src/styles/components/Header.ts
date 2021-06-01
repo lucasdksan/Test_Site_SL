@@ -14,7 +14,6 @@ export const Container = styled(motion.header)`
     right: 0;
     top: 0;
 `;
-
 export const Menu = styled.nav`
     display: flex;
     align-items: center;
@@ -22,6 +21,18 @@ export const Menu = styled.nav`
     padding: 10px 250px;
     width: 100%;
     height: 100%;
+    @media(max-width: 1050px){
+        padding: 10px 150px;
+    }
+    @media(max-width: 768px){
+        padding: 10px 100px;
+    }
+    @media(max-width: 630px){
+        padding: 10px 60px;
+    }
+    @media(max-width: 525px){
+        padding: 10px 0px;
+    }
 `;
 export const ButtonMenu = styled.a`
     text-decoration: none;
@@ -40,5 +51,8 @@ export const ButtonMenu = styled.a`
         -webkit-transition: all 0.3s;
         transition: all 0.3s;
         cursor: pointer;
+    }
+    @media(max-width: 525px){
+        font-size: 15px;
     }
 `;

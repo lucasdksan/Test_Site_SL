@@ -33,8 +33,12 @@ export const FirstBlock = styled.div`
     padding: 40px 30px;
 `;
 export const FirstBlockImg = styled(motion.img)`
-    width: 240px;
-    height: 240px;
+    width: 250px;
+    height: 250px;
+    @media(max-width: 768px){
+        width: 200px;
+        height: 200px;
+    }
 `;
 export const FirstBlocText = styled(motion.h1)`
     font-family: Consolas;
@@ -42,6 +46,9 @@ export const FirstBlocText = styled(motion.h1)`
     font-size: 25px;
     margin-top: 30px;
     text-align: center;
+    @media(max-width: 625px){
+        font-size: 20px;
+    }
 `;
 export const SecondBlock = styled(motion.div)`
     display: flex;
@@ -77,13 +84,13 @@ export const AreaDescriptionSecondBlock = styled.div`
     height: 100%;
     padding: 10px 175px;
 `;
-export const DescriptionSecondBlock = styled.div`
+export const DescriptionSecondBlock = styled.p`
     text-align: justify;
     font-size: 20px;
     font-family: Arial, Helvetica, sans-serif;
     line-height: 30px;
     flex: 1;
-    margin-right: 25px;
+    margin-right: 30px;
 `;
 export const ThirdBlock = styled.div`
     display: flex;
@@ -175,9 +182,13 @@ export const TitleFourthBlock = styled.h2`
     margin-bottom: 80px;
     text-align: center;
     color: #fff;
-    @media(max-width: 765px){
+    @media(max-width: 1100px){
         font-size: 25px;
         margin-bottom: 40px;
+    }
+    @media(max-width: 768px){
+        font-size: 20px;
+        margin-bottom: 35px;
     }
 `;
 export const AreaImage = styled.div`

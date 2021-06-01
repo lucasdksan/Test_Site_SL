@@ -1,6 +1,5 @@
 import React from 'react';
 import Header from '../components/Header';
-import Lottie from 'react-lottie';
 import Img from '../assets/LogoOff.jpeg';
 import UpBotton from '../components/UpButton';
 import Footer from '../components/Footer';
@@ -8,26 +7,26 @@ import Card from '../components/Card';
 import Data from '../data/CardInfo';
 import DataPath from '../data/PathImages';
 import Animation from '../assets/icons/Business.json';
+import Lottie from 'react-lottie';
 import {    Container, 
-    Content, 
-    FirstBlock, 
-    FirstBlockImg,
-    FirstBlocText,
-    SecondBlock,
-    TextAreaSecondBlock,
-    TitleSecondBlock,
-    AreaDescriptionSecondBlock,
-    DescriptionSecondBlock,
-    ThirdBlock, 
-    TitleThirdBlock,
-    AreaDescriptionThirdBlock,
-    Button,
-    Whatsapp,
-    FourthBlock,
-    TitleFourthBlock,
-    ImagesFourthBlock,
-    AreaImage, } from '../styles/pages/Home';
-import { SSL_OP_NO_TLSv1_1 } from 'constants';
+            Content, 
+            FirstBlock, 
+            FirstBlockImg,
+            FirstBlocText,
+            SecondBlock,
+            TextAreaSecondBlock,
+            TitleSecondBlock,
+            AreaDescriptionSecondBlock,
+            DescriptionSecondBlock,
+            ThirdBlock, 
+            TitleThirdBlock,
+            AreaDescriptionThirdBlock,
+            Button,
+            Whatsapp,
+            FourthBlock,
+            TitleFourthBlock,
+            ImagesFourthBlock,
+            AreaImage, } from '../styles/pages/Home';
 
 const Home = ()=>{
     const defaultOptions = {
@@ -84,12 +83,15 @@ const Home = ()=>{
                     </TextAreaSecondBlock>
                     <AreaDescriptionSecondBlock>
                         <DescriptionSecondBlock>
-                        Surge a reformulação do nome, assumindo a marca do nosso sobrenome no mercado. Permanecendo o mesmo dinamismo, eficiência e as melhores soluções. Atuando desde 2017 em construção pesada, a Silva & Lima oferece serviços em diversas áreas como: Elaboração de projetos arquitetônicos, Elaboração projetos de reforma/ampliação. Elaboração de projetos elétricos, hidráulicos e estruturais. Elo fundamental para a consolidação de sua atuação na prestação de serviços. A Silva & Lima possui o compromisso de viabilizar condições para atender os nossos clientes e parceiros, assegurando a qualidade contratada e o cronograma estipulado. Garantimos esse compromisso priorizando a disponibilização de equipamentos novos, modernos e empregando mão-de-obra qualificada para atendimento de cada necessidade.
+                            Surge a reformulação do nome, assumindo a marca do nosso sobrenome no mercado. Permanecendo o mesmo dinamismo, eficiência e as melhores soluções. Atuando desde 2017 em construção pesada, a Silva & Lima oferece serviços em diversas áreas como: Elaboração de projetos arquitetônicos, Elaboração projetos de reforma/ampliação. Elaboração de projetos elétricos, hidráulicos e estruturais. Elo fundamental para a consolidação de sua atuação na prestação de serviços. A Silva & Lima possui o compromisso de viabilizar condições para atender os nossos clientes e parceiros, assegurando a qualidade contratada e o cronograma estipulado. Garantimos esse compromisso priorizando a disponibilização de equipamentos novos, modernos e empregando mão-de-obra qualificada para atendimento de cada necessidade.
                         </DescriptionSecondBlock>
                         <Lottie
                             options={defaultOptions}
                             height={300}
                             width={385}
+                            style={{
+                                marginLeft: 10,
+                            }}
                         />
                     </AreaDescriptionSecondBlock>
                 </SecondBlock>

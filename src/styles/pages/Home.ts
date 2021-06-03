@@ -151,9 +151,13 @@ export const ThirdBlock = styled.section`
     width: 100%;
     height: 100vh;
     background-color: #000;
+    @media(max-width: 1090px){
+        justify-content: space-evenly;
+        padding: 25px 5px; 
+    }
 `;
 export const TitleThirdBlock = styled.h1`
-    font-size: 35px;
+    font-size: 30px;
     font-family: Consolas;
     color: #fff;
 `;
@@ -163,12 +167,18 @@ export const AreaDescriptionThirdBlock = styled.div`
     justify-content: center;
     flex-direction: row;
     width: 100%;
+    height: 100vh;
     margin-bottom: 30px;
+    @media(max-width: 640px){
+        flex-direction: column;
+    }
 `;
 export const Whatsapp = styled.span`
-    margin-bottom: 20px;
-    width: 250px;
-    height: 40px;
+    width: 260px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 `;
 export const Button = styled.a`
     text-decoration: none;
@@ -200,20 +210,21 @@ export const Button = styled.a`
         color: #fff;
     }
     @media(max-width: 800px){
-        -moz-transition: none;
-        -webkit-transition: none;
-        transition: none;
-        transition-property: none;
+        -moz-transition: all 0.5s;
+        -webkit-transition: all 0.5s;
+        transition: all 0.5s;
         transform: scale(1);
-        background-color: #000000;
+        background-color: #353535;
+        color: #fff;
         &:hover{
-            cursor: none;
-            -moz-transition: none;
-            -webkit-transition: none;
-            transition: none;
-            transition-property: none;
-            transform: none;
-            background-color: #000000;
+            cursor: pointer;
+            -moz-transition: all 0.5s;
+            -webkit-transition: all 0.5s;
+            transition: all 0.5s;
+            transition-property: transform;
+            transform: scale(0.9);
+            background-color: #34af23;
+            color: #fff;
         }
     }
 `;

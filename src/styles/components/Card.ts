@@ -8,13 +8,37 @@ export const Container = styled.div`
     flex-direction: column;
     width: 350px;
     height: 400px;
-    padding: 10px 20px;
-    margin-right: 15px;
+    padding: 10px 15px;
+    margin-right: 7.5px;
+    margin-left: 7.5px;
+    @media(max-width: 1090px){
+        padding: 10px 5px;
+    }
+    @media(max-width: 915px){
+        width: 390px;
+        height: 380px;
+        padding: 10px 5px;
+        margin-right: 3.5px;
+        margin-left: 3.5px;
+    }
+    @media(max-width: 780px){
+        padding: 10px 0px;
+        margin-right: 3px;
+        margin-left: 3px;
+    }
 `;
 export const Image = styled(motion.img)`
     width: 160px;
     height: 150px;
     margin-bottom: 20px;
+    @media(max-width: 1090px){
+        width: 140px;
+        height: 130px;
+    }
+    @media(max-width: 915px){
+        width: 120px;
+        height: 110px;
+    }
 `;
 export const Txt = styled.h1`
     color: #fff;
@@ -22,4 +46,16 @@ export const Txt = styled.h1`
     font-family: Consolas;
     margin-bottom: 8px;
     text-align: center;
+    @media(max-width: 1090px){
+        font-size: 15px;
+        margin-bottom: 6px;
+    }
+    @media(max-width: 915px){
+        font-size: 13px;
+        margin-bottom: 6px;
+    }
+    @media(max-width: 780px){
+        font-size: 11px;
+        margin-bottom: 4px;
+    }
 `;

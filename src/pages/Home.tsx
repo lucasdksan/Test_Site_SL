@@ -41,29 +41,34 @@ const Home = ()=>{
     function SecondBlockAnimate(){
         const { y: pageYOffset } = useWindowScroll();
         let width = window.innerWidth;
-        console.log(window.innerWidth);
-        const [ scaleX, setScaleX ] = useState<number>(365);
+        const [ scaleX, setScaleX ] = useState<number>(350);
         const [ scaleY, setScaleY ] = useState<number>(300);
         useEffect(()=>{
-            if(window.innerWidth <= 1050){
-                setScaleX(200);
-                setScaleY(150);
+            if(window.innerWidth <= 1200 && window.innerWidth >= 1081){
+                setScaleX(290);
+                setScaleY(250);
+            }
+            else if(window.innerWidth <= 1080 && window.innerWidth > 950){
+                setScaleX(255);
+                setScaleY(235);
+            }
+            else if(window.innerWidth <= 950 && window.innerWidth > 830){
+                setScaleX(360);
+                setScaleY(320);
+            }
+            else if(window.innerWidth <= 830){
+                setScaleX(280);
+                setScaleY(220);
             }
         },[width]);
         if(pageYOffset >= 150){
             return(
                 <SecondBlock
                     initial={{
-                        y: 200,
                         opacity: 0,
                     }}
                     animate={{
-                        y: 0,
                         opacity: [0, 0.2, 0.5, 0.8, 1],
-                    }}
-                    transition={{
-                        type: 'spring',
-                        stiffness: 40,
                     }}
                 >
                     <TextAreaSecondBlock id='about'>
@@ -78,7 +83,10 @@ const Home = ()=>{
                             height={scaleY}
                             width={scaleX}
                             style={{
-                                marginLeft: 10,
+                                display: 'flex',
+                                alignItems: 'center',
+                                justifyContent: 'center',
+                                margin: '0px 0px 10px 10px',
                             }}
                         />
                     </AreaDescriptionSecondBlock>
@@ -147,6 +155,7 @@ const Home = ()=>{
                                     <Card
                                         image={itens.image}
                                         text={itens.text}
+                                        key={itens.image}
                                     />
                                 );
                             })

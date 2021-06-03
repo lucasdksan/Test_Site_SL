@@ -10,7 +10,7 @@ export const Container = styled(motion.div)`
     height: 100%;
     width: 100%;
 `;
-export const Content = styled.div`
+export const Content = styled.main`
     display: flex;
     top: 0;
     bottom: 0;
@@ -22,7 +22,7 @@ export const Content = styled.div`
     height: 100%;
     background-color: #fff;
 `;
-export const FirstBlock = styled.div`
+export const FirstBlock = styled.section`
     display: flex;
     align-items: center;
     justify-content: center;
@@ -50,7 +50,7 @@ export const FirstBlocText = styled(motion.h1)`
         font-size: 20px;
     }
 `;
-export const SecondBlock = styled(motion.div)`
+export const SecondBlock = styled(motion.section)`
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -59,8 +59,12 @@ export const SecondBlock = styled(motion.div)`
     width: 100%;
     height: 100vh;
     background-color: #fff;
+    @media(max-width: 550px){
+        padding: 20px 5px;
+        margin-bottom: 50px;
+    }
 `;
-export const TextAreaSecondBlock = styled.nav`
+export const TextAreaSecondBlock = styled.div`
     display: flex;
     align-items: center;
     justify-content: flex-start;
@@ -69,13 +73,28 @@ export const TextAreaSecondBlock = styled.nav`
     height: 40px;
     margin-bottom: 20px;
     padding: 10px 150px;
+    @media(max-width: 1200px){
+        padding: 10px 100px;
+    }
+    @media(max-width: 1080px){
+        padding: 10px 90px;
+        margin-bottom: 10px;
+    }
+    @media(max-width: 950px){
+        padding: 10px 20px;
+        margin-bottom: 5px;
+    }
+    @media(max-width: 550px){
+        padding: 10px 10px;
+        margin-bottom: 0px;
+    }
 `;
 export const TitleSecondBlock = styled.h1`
     font-size: 35px;
     font-family: Consolas;
     color: #353535;
 `;
-export const AreaDescriptionSecondBlock = styled.div`
+export const AreaDescriptionSecondBlock = styled.nav`
     display: flex;
     align-items: flex-start;
     justify-content: space-evenly;
@@ -83,6 +102,23 @@ export const AreaDescriptionSecondBlock = styled.div`
     width: 100%;
     height: 100%;
     padding: 10px 175px;
+    @media(max-width: 1200px){
+        padding: 10px 145px;
+    }
+    @media(max-width: 1080px){
+        padding: 10px 110px;
+    }
+    @media(max-width: 950px){
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        margin-bottom: 10px;
+        padding: 10px 25px;
+    }
+    @media(max-width: 550px){
+        padding: 10px 10px;
+    }
 `;
 export const DescriptionSecondBlock = styled.p`
     text-align: justify;
@@ -91,8 +127,22 @@ export const DescriptionSecondBlock = styled.p`
     line-height: 30px;
     flex: 1;
     margin-right: 30px;
+    z-index: 2;
+    @media(max-width: 1200px){
+        font-size: 16px;
+        line-height: 28px;
+    }
+    @media(max-width: 950px){
+        font-size: 14px;
+        line-height: 26px;
+    }
+    @media(max-width: 550px){
+        font-size: 13px;
+        line-height: 24px;
+        margin-bottom: 20px;
+    }
 `;
-export const ThirdBlock = styled.div`
+export const ThirdBlock = styled.section`
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -167,7 +217,7 @@ export const Button = styled.a`
         }
     }
 `;
-export const FourthBlock = styled.div`
+export const FourthBlock = styled.section`
     display: flex;
     flex-direction: column;
     align-items: center;

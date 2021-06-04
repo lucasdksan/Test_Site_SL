@@ -35,12 +35,12 @@ export const Container = styled.div`
     }
 `;
 export const Image = styled(motion.img)`
-    width: 160px;
-    height: 150px;
+    width: 180px;
+    height: 160px;
     margin-bottom: 20px;
     @media(max-width: 1090px){
-        width: 140px;
-        height: 130px;
+        width: 160px;
+        height: 140px;
     }
     @media(max-width: 915px){
         width: 120px;

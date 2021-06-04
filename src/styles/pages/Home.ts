@@ -85,7 +85,7 @@ export const TextAreaSecondBlock = styled.div`
         margin-bottom: 5px;
     }
     @media(max-width: 550px){
-        padding: 10px 10px;
+        padding: 10px 15px;
         margin-bottom: 0px;
     }
 `;
@@ -117,7 +117,7 @@ export const AreaDescriptionSecondBlock = styled.nav`
         padding: 10px 25px;
     }
     @media(max-width: 550px){
-        padding: 10px 10px;
+        padding: 10px 20px;
     }
 `;
 export const DescriptionSecondBlock = styled.p`
@@ -135,6 +135,7 @@ export const DescriptionSecondBlock = styled.p`
     @media(max-width: 950px){
         font-size: 14px;
         line-height: 26px;
+        margin-right: 0;
     }
     @media(max-width: 550px){
         font-size: 13px;
@@ -160,6 +161,7 @@ export const TitleThirdBlock = styled.h1`
     font-size: 30px;
     font-family: Consolas;
     color: #fff;
+    text-align: center;
 `;
 export const AreaDescriptionThirdBlock = styled.div`
     display: flex;
@@ -170,7 +172,9 @@ export const AreaDescriptionThirdBlock = styled.div`
     height: 100vh;
     margin-bottom: 30px;
     @media(max-width: 640px){
-        flex-direction: column;
+        display: flex;
+        flex-direction: row;
+        overflow-x: auto;
     }
 `;
 export const Whatsapp = styled.span`

@@ -26,6 +26,13 @@ export const Container = styled.div`
         margin-right: 3px;
         margin-left: 3px;
     }
+    @media(max-width: 640px){
+        width: 400px;
+        height: 380px;
+        padding: 10px 5px;
+        margin-right: 20px;
+        margin-left: 20px;
+    }
 `;
 export const Image = styled(motion.img)`
     width: 160px;
@@ -38,6 +45,10 @@ export const Image = styled(motion.img)`
     @media(max-width: 915px){
         width: 120px;
         height: 110px;
+    }
+    @media(max-width: 640px){
+        width: 140px;
+        height: 130px;
     }
 `;
 export const Txt = styled.h1`
@@ -57,5 +68,9 @@ export const Txt = styled.h1`
     @media(max-width: 780px){
         font-size: 11px;
         margin-bottom: 4px;
+    }
+    @media(max-width: 640px){
+        font-size: 15px;
+        margin-bottom: 6px;
     }
 `;

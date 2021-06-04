@@ -27,9 +27,9 @@ export const Container = styled.div`
         margin-left: 3px;
     }
     @media(max-width: 640px){
-        width: 400px;
-        height: 380px;
-        padding: 10px 5px;
+        width: 500px;
+        height: 400px;
+        padding: 10px 0px;
         margin-right: 20px;
         margin-left: 20px;
     }
@@ -47,11 +47,12 @@ export const Image = styled(motion.img)`
         height: 110px;
     }
     @media(max-width: 640px){
-        width: 140px;
-        height: 130px;
+        width: 180px;
+        height: 140px;
     }
 `;
 export const Txt = styled.h1`
+    width: 100%;
     color: #fff;
     font-size: 17px;
     font-family: Consolas;
@@ -70,7 +71,7 @@ export const Txt = styled.h1`
         margin-bottom: 4px;
     }
     @media(max-width: 640px){
-        font-size: 15px;
-        margin-bottom: 6px;
+        font-size: 14px;
+        margin-bottom: 4px;
     }
 `;

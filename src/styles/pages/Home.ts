@@ -172,7 +172,10 @@ export const AreaDescriptionThirdBlock = styled.div`
     height: 100vh;
     margin-bottom: 30px;
     @media(max-width: 640px){
+        width: 100%;
         display: flex;
+        align-items: center;
+        justify-content: space-between;
         flex-direction: row;
         overflow-x: auto;
     }

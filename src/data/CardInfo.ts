@@ -4,6 +4,7 @@ import Image3 from '../assets/images/ThirdImage.png';
 
 const DataInfo = [
     {
+        key: 0,
         image: Image,
         text: {
             txt1: 'Instalações de Combate a Incêndio',
@@ -12,6 +13,7 @@ const DataInfo = [
         }
     },
     {
+        key: 1,
         image: Image2,
         text: {
             txt1: 'Projetos de Estruturas Metálicas',
@@ -20,6 +22,7 @@ const DataInfo = [
         }
     },
     {
+        key: 2,
         image: Image3,
         text: {
             txt1: 'Nivelamento de Terreno',

@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import Header from '../components/Header';
 import Img from '../assets/LogoOff.jpeg';
+import Imgs from '../data/PathProject';
 import UpBotton from '../components/UpButton';
 import Footer from '../components/Footer';
 import Card from '../components/Card';
@@ -8,6 +9,7 @@ import Data from '../data/CardInfo';
 import DataPath from '../data/PathImages';
 import Animation from '../assets/icons/Business.json';
 import Lottie from 'react-lottie';
+import { useWindowScroll } from 'react-use';
 import {    Container, 
             Content, 
             FirstBlock, 
@@ -26,19 +28,23 @@ import {    Container,
             FourthBlock,
             TitleFourthBlock,
             ImagesFourthBlock,
-            AreaImage, } from '../styles/pages/Home';
-import { useWindowScroll } from 'react-use';
+            AreaImage,
+            FifthBlock,
+            TitleFifthBlock,
+            ContentFifthBlock,
+            ImageFifth,
+            ImageContent } from '../styles/pages/Home';
 
 const Home = ()=>{
-    const defaultOptions = {
-        loop: true,
-        autoplay: true,
-        animationData: Animation,
-        rendererSettings: {
-            preserveAspectRatio: 'xMidYMid slice'
-        }
-    }
     function SecondBlockAnimate(){
+        const defaultOptions = {
+            loop: true,
+            autoplay: true,
+            animationData: Animation,
+            rendererSettings: {
+                preserveAspectRatio: 'xMidYMid slice'
+            }
+        }
         const { y: pageYOffset } = useWindowScroll();
         let width = window.innerWidth;
         const [ scaleX, setScaleX ] = useState<number>(350);
@@ -61,7 +67,16 @@ const Home = ()=>{
                 setScaleY(220);
             }
         },[width]);
-        if(pageYOffset >= 150){
+        if(pageYOffset < 150){
+            return(
+                <SecondBlock
+                    initial={{
+                        opacity: 0,
+                    }}
+                />
+            );
+        }
+        else {
             return(
                 <SecondBlock
                     initial={{
@@ -93,14 +108,8 @@ const Home = ()=>{
                 </SecondBlock>
             );
         }
-        else {
-            return(
-                <SecondBlock>
-
-                </SecondBlock>
-            );
-        }
     }
+
     return(
         <Container>
             <Header/>
@@ -155,7 +164,7 @@ const Home = ()=>{
                                     <Card
                                         image={itens.image}
                                         text={itens.text}
-                                        key={itens.image}
+                                        key={itens.key}
                                     />
                                 );
                             })
@@ -174,8 +183,8 @@ const Home = ()=>{
                             DataPath.map(itens =>{
                                 return (
                                     <ImagesFourthBlock
-                                        src={itens}
-                                        key={itens}
+                                        src={itens.image}
+                                        key={itens.key}
                                         whileHover={{
                                             scale: 1.1,
                                             cursor: 'pointer',
@@ -186,6 +195,23 @@ const Home = ()=>{
                         }
                     </AreaImage>
                 </FourthBlock>
+                <FifthBlock>
+                    <TitleFifthBlock>SEU PROJETO GANHA VIDA</TitleFifthBlock>
+                    <ContentFifthBlock>
+                        {
+                            Imgs.map(itens => {
+                                return(
+                                    <ImageContent>
+                                        <ImageFifth
+                                            src={itens}
+                                            key={itens}
+                                        />
+                                    </ImageContent>
+                                );
+                            })
+                        }
+                    </ContentFifthBlock>
+                </FifthBlock>
             </Content>
             <UpBotton/>
             <Footer/>

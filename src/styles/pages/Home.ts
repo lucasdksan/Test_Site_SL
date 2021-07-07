@@ -248,6 +248,7 @@ export const FourthBlock = styled.section`
 export const TitleFourthBlock = styled.h2`
     font-size: 30px;
     margin-bottom: 80px;
+    font-family: Consolas;
     text-align: center;
     color: #fff;
     @media(max-width: 1100px){
@@ -286,4 +287,60 @@ export const ImagesFourthBlock = styled(motion.img)`
         width: 100px;
         height: 100px;
     }
+`;
+export const FifthBlock = styled.section`
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 35px 10px;
+    margin-bottom: 10px;
+    width: 100%;
+    height: 100vh;
+    background-color: #fff;
+`;
+export const TitleFifthBlock = styled.h2`
+    font-size: 30px;
+    margin-bottom: 40px;    
+    font-family: Consolas;
+    text-align: center;
+    color: #000;
+`;
+export const ContentFifthBlock = styled.div`
+    display: grid;
+    grid-gap: 60px;
+    display: grid;
+    grid-gap: 80px;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-bottom: 40px;
+    padding: 0 10px;
+    @media(max-width: 1100px){
+        display: grid;
+        grid-gap: 60px;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    @media(max-width: 768px){
+        display: grid;
+        grid-gap: 40px;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    }
+`;
+export const ImageContent = styled.div`
+    width: 200px;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @media(max-width: 768px){
+        width: 120px;
+        height: 120px;
+    }
+`;
+export const ImageFifth = styled.img`
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 `;

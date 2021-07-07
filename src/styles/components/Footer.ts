@@ -3,7 +3,7 @@ import { AiOutlineWhatsApp, AiOutlineMail, AiOutlineInstagram, AiOutlineCopyrigh
 
 const linkCss = css`
     color: #808080;
-    font-size: 45px;
+    font-size: 50px;
     margin: 0 20px 0 20px;
     transition: .5s;
     transition-property: color;
@@ -18,7 +18,7 @@ export const Container = styled.footer`
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: #353535;
+    background-color: #000;
     width: 100%;
     height: 280px;
     padding: 30px 10px;

@@ -8,14 +8,37 @@ import Image7 from '../assets/Clients/PRF.svg';
 import Image8 from '../assets/Clients/SGB.svg';
 
 const Images = [
-    Image1,
-    Image2,
-    Image3,
-    Image4,
-    Image5,
-    Image6,
-    Image7,
-    Image8
+    {
+        key: 0,
+        image: Image1
+    },
+    {
+        key: 1,
+        image: Image2
+    },
+    {
+        key: 2,
+        image: Image3
+    },
+    {
+        key: 3,
+        image: Image4
+    },
+    {
+        key: 4,
+        image: Image5
+    },
+    {
+        key: 5,
+        image: Image6
+    },
+    {
+        key: 6,
+        image: Image7},
+    {
+        key: 7,
+        image: Image8
+    }
 ];
 
 export default Images;

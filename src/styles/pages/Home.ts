@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import { motion } from 'framer-motion';
 import theme from '../colors/theme';
-import backgroundImg from '../../assets/background/Back.jpg';
+import backgroundImg from '../../assets/background/Back2.jpg';
 
 export const Container = styled(motion.div)`
     display: flex;
@@ -29,7 +29,7 @@ export const FirstBlock = styled.section`
     align-items: center;
     justify-content: center;
     width: 100%;
-    height: 89vh;
+    height: 100vh;
     flex-direction: column;
     background-image: url(${backgroundImg});
     background-repeat: no-repeat;
@@ -47,7 +47,7 @@ export const FirstBlockImg = styled(motion.img)`
 export const FirstBlocText = styled(motion.h1)`
     font-family: ${theme.fonts.font1};
     color: ${theme.colors.secondary};
-    font-size: 25px;
+    font-size: 28px;
     margin-top: 30px;
     text-align: center;
     @media(max-width: 625px){

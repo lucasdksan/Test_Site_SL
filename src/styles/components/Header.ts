@@ -8,7 +8,7 @@ export const Container = styled(motion.header)`
     align-items: center;
     justify-content: space-around;
     width: 100%;
-    height: 80px;
+    height: 70px;
     background-color: ${theme.colors.primay};
     padding: 5px 10px;
     left: 0;

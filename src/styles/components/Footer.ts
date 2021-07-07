@@ -1,14 +1,15 @@
 import styled, { css } from 'styled-components';
 import { AiOutlineWhatsApp, AiOutlineMail, AiOutlineInstagram, AiOutlineCopyright } from 'react-icons/ai';
+import theme from '../colors/theme';
 
 const linkCss = css`
-    color: #808080;
+    color: ${theme.colors.colorIcon};
     font-size: 50px;
     margin: 0 20px 0 20px;
     transition: .5s;
     transition-property: color;
     &:hover{
-        color: #05a0e7;
+        color: ${theme.colors.colorIconHover};
         cursor: pointer;
     }
 `;
@@ -18,7 +19,7 @@ export const Container = styled.footer`
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: #000;
+    background-color: ${theme.colors.primay};
     width: 100%;
     height: 280px;
     padding: 30px 10px;
@@ -41,7 +42,7 @@ export const AreaIcons = styled.div`
 `;
 export const Line = styled.span`
     width: 75%;
-    border-bottom: 2px solid #fff;
+    border-bottom: 2px solid ${theme.colors.secondary};
     margin-bottom: 15px;
 `;
 export const Links = styled.a`
@@ -56,7 +57,7 @@ export const TargerEnd = styled.div`
     margin-bottom: auto;
     height: 30px;
     width: 100%;
-    color: #fff;
+    color: ${theme.colors.secondary};
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -75,8 +76,8 @@ export const TargerEnd = styled.div`
 `;
 export const Copyright = styled(AiOutlineCopyright)``;
 export const Text = styled.p`
-    font-family: 'Times New Roman', Times, serif;
-    @media(max-width: 380px){
+    font-family: ${theme.fonts.font3}, Times, serif;
+    @media(max-width: 400px){
         display: none;
     }
 `;

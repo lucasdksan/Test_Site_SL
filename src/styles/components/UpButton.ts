@@ -1,10 +1,11 @@
 import styled from 'styled-components';
 import { MdKeyboardArrowUp } from 'react-icons/md';
+import theme from '../colors/theme';
 
 export const Container = styled.div`
     z-index: 4;
     flex-direction: row;
-    background: #0c0f0a;
+    background: ${theme.colors.upButton};
     font-size: 20px;
     cursor: pointer;
     position: fixed;
@@ -32,7 +33,7 @@ export const Botton = styled.span`
 `;
 export const ArrowIcon = styled(MdKeyboardArrowUp)`
     font-size: 40px;
-    color: #fff;
+    color: ${theme.colors.secondary};
     animation: scrollTop 0.5s alternate ease infinite;
 `;
 

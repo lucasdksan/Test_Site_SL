@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import { motion } from 'framer-motion';
+import theme from '../colors/theme';
 import backgroundImg from '../../assets/background/Back.jpg';
 
 export const Container = styled(motion.div)`
@@ -21,7 +22,7 @@ export const Content = styled.main`
     flex: 1;
     width: 100%;
     height: 100%;
-    background-color: #fff;
+    background-color: ${theme.colors.secondary};
 `;
 export const FirstBlock = styled.section`
     display: flex;
@@ -44,8 +45,8 @@ export const FirstBlockImg = styled(motion.img)`
     }
 `;
 export const FirstBlocText = styled(motion.h1)`
-    font-family: Consolas;
-    color: #fff;
+    font-family: ${theme.fonts.font1};
+    color: ${theme.colors.secondary};
     font-size: 25px;
     margin-top: 30px;
     text-align: center;
@@ -61,7 +62,7 @@ export const SecondBlock = styled(motion.section)`
     padding: 30px 5px;
     width: 100%;
     height: 100vh;
-    background-color: #fff;
+    background-color: ${theme.colors.secondary};
     @media(max-width: 550px){
         padding: 20px 5px;
         margin-bottom: 50px;
@@ -94,8 +95,8 @@ export const TextAreaSecondBlock = styled.div`
 `;
 export const TitleSecondBlock = styled.h1`
     font-size: 32px;
-    font-family: 'Roboto', sans-serif;
-    color: #353535;
+    font-family: ${theme.fonts.font2}, sans-serif;
+    color: ${theme.colors.colorText1};
 `;
 export const AreaDescriptionSecondBlock = styled.nav`
     display: flex;
@@ -126,7 +127,7 @@ export const AreaDescriptionSecondBlock = styled.nav`
 export const DescriptionSecondBlock = styled.p`
     text-align: justify;
     font-size: 20px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: ${theme.fonts.font4}, ${theme.fonts.font5}, sans-serif;
     line-height: 30px;
     flex: 1;
     margin-right: 30px;
@@ -154,7 +155,7 @@ export const ThirdBlock = styled.section`
     padding: 30px 10px;
     width: 100%;
     height: 100vh;
-    background-color: #000;
+    background-color: ${theme.colors.primay};
     @media(max-width: 1090px){
         justify-content: space-evenly;
         padding: 25px 5px; 
@@ -162,8 +163,8 @@ export const ThirdBlock = styled.section`
 `;
 export const TitleThirdBlock = styled.h1`
     font-size: 32px;
-    font-family: 'Roboto', sans-serif;
-    color: #fff;
+    font-family: ${theme.fonts.font2}, sans-serif;
+    color: ${theme.colors.secondary};
     text-align: center;
 `;
 export const AreaDescriptionThirdBlock = styled.div`
@@ -200,8 +201,8 @@ export const Button = styled.a`
     transition: all 0.5s;
     transition-property: transform;
     transform: scale(1.2);
-    background-color: #353535;
-    color: #fff;
+    background-color: ${theme.colors.colorText1};
+    color: ${theme.colors.secondary};
     border-radius: 10px;
     display: flex;
     align-items: center;
@@ -216,16 +217,16 @@ export const Button = styled.a`
         transition: all 0.5s;
         transition-property: transform;
         transform: scale(1);
-        background-color: #34af23;
-        color: #fff;
+        background-color: ${theme.colors.backgroundWhatsapp};
+        color: ${theme.colors.secondary};
     }
     @media(max-width: 800px){
         -moz-transition: all 0.5s;
         -webkit-transition: all 0.5s;
         transition: all 0.5s;
         transform: scale(1);
-        background-color: #353535;
-        color: #fff;
+        background-color: ${theme.colors.colorText1};
+        color: ${theme.colors.secondary};
         &:hover{
             cursor: pointer;
             -moz-transition: all 0.5s;
@@ -233,8 +234,8 @@ export const Button = styled.a`
             transition: all 0.5s;
             transition-property: transform;
             transform: scale(0.9);
-            background-color: #34af23;
-            color: #fff;
+            background-color: ${theme.colors.backgroundWhatsapp};
+            color: ${theme.colors.secondary};
         }
     }
 `;
@@ -245,15 +246,15 @@ export const FourthBlock = styled.section`
     justify-content: center;
     width: 100%;
     padding: 40px 0;
-    background-color: #353535;
-    border-bottom: solid 1px #fff;
+    background-color: ${theme.colors.colorText1};
+    border-bottom: solid 1px ${theme.colors.secondary};
 `;
 export const TitleFourthBlock = styled.h2`
     font-size: 32px;
     margin-bottom: 80px;
-    font-family: 'Roboto', sans-serif;
+    font-family: ${theme.fonts.font2}, sans-serif;
     text-align: center;
-    color: #fff;
+    color: ${theme.colors.secondary};
     @media(max-width: 1100px){
         font-size: 25px;
         margin-bottom: 40px;
@@ -300,14 +301,14 @@ export const FifthBlock = styled.section`
     margin-bottom: 10px;
     width: 100%;
     height: 100vh;
-    background-color: #fff;
+    background-color: ${theme.colors.secondary};
 `;
 export const TitleFifthBlock = styled.h2`
     font-size: 32px;
     margin-bottom: 40px;    
-    font-family: 'Roboto', sans-serif;
+    font-family: ${theme.fonts.font2} , sans-serif;
     text-align: center;
-    color: #000;
+    color: ${theme.colors.primay};
 `;
 export const ContentFifthBlock = styled.div`
     display: grid;

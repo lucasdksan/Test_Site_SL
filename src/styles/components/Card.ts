@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import { motion } from 'framer-motion';
+import theme from '../colors/theme';
 
 export const Container = styled.div`
     display: flex;
@@ -53,9 +54,9 @@ export const Image = styled(motion.img)`
 `;
 export const Txt = styled.h1`
     width: 100%;
-    color: #fff;
+    color: ${theme.colors.secondary};
     font-size: 18px;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: ${theme.fonts.font3}, Times, serif;
     margin-bottom: 8px;
     text-align: center;
     @media(max-width: 1090px){

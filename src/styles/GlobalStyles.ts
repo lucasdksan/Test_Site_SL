@@ -1,4 +1,5 @@
 import { createGlobalStyle } from 'styled-components';
+import theme from './colors/theme';
 
 export default createGlobalStyle`
     *{
@@ -7,16 +8,16 @@ export default createGlobalStyle`
         box-sizing: border-box;
     }
     body{
-        background: #ffffff;
+        background: ${theme.colors.secondary};
         padding: 0px;
         width: auto;
     }
     body::-webkit-scrollbar{
         width: 10px;
-        background-color: #e9ecef;
+        background-color: ${theme.colors.colorBackground};
     }
     body::-webkit-scrollbar-thumb{
-        background-color: #000000;
+        background-color: ${theme.colors.primay};
     }
     #root{
         width: 100%;

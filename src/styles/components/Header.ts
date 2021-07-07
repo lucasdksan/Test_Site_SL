@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import { motion } from 'framer-motion';
+import theme from '../colors/theme';
 
 export const Container = styled(motion.header)`
     display: flex;
@@ -8,7 +9,7 @@ export const Container = styled(motion.header)`
     justify-content: space-around;
     width: 100%;
     height: 80px;
-    background-color: #000;
+    background-color: ${theme.colors.primay};
     padding: 5px 10px;
     left: 0;
     right: 0;
@@ -36,9 +37,9 @@ export const Menu = styled.nav`
 `;
 export const ButtonMenu = styled.a`
     text-decoration: none;
-    color: #808080;
+    color: ${theme.colors.colorIcon};
     text-decoration: none;
-    font-family: Consolas;
+    font-family: ${theme.fonts.font1};
     line-height: normal;
     font-size: 18px;
     font-weight: bold;
@@ -46,7 +47,7 @@ export const ButtonMenu = styled.a`
     -webkit-transition: all 0.7s;
     transition: all 0.7s;
     &:hover{
-        color: #ffffff;
+        color: ${theme.colors.secondary};
         -moz-transition: all 0.3s;
         -webkit-transition: all 0.3s;
         transition: all 0.3s;

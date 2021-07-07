@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import { motion } from 'framer-motion';
+import backgroundImg from '../../assets/background/Back.jpg';
 
 export const Container = styled(motion.div)`
     display: flex;
@@ -29,7 +30,9 @@ export const FirstBlock = styled.section`
     width: 100%;
     height: 89vh;
     flex-direction: column;
-    background-color: #353535;
+    background-image: url(${backgroundImg});
+    background-repeat: no-repeat;
+    background-size: cover;
     padding: 40px 30px;
 `;
 export const FirstBlockImg = styled(motion.img)`

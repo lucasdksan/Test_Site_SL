@@ -53,6 +53,6 @@ export const ButtonMenu = styled.a`
         cursor: pointer;
     }
     @media(max-width: 525px){
-        font-size: 15px;
+        font-size: 14px;
     }
 `;

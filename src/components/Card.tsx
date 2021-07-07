@@ -20,7 +20,7 @@ const Card: React.FC<Props> = ({image, text})=>{
                 }}
                 transition={{
                     type: 'spring',
-                    stiffness: 200
+                    stiffness: 50
                 }}
             />
             <Txt>{text.txt1}</Txt>

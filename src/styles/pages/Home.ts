@@ -90,8 +90,8 @@ export const TextAreaSecondBlock = styled.div`
     }
 `;
 export const TitleSecondBlock = styled.h1`
-    font-size: 35px;
-    font-family: Consolas;
+    font-size: 32px;
+    font-family: 'Roboto', sans-serif;
     color: #353535;
 `;
 export const AreaDescriptionSecondBlock = styled.nav`
@@ -158,8 +158,8 @@ export const ThirdBlock = styled.section`
     }
 `;
 export const TitleThirdBlock = styled.h1`
-    font-size: 30px;
-    font-family: Consolas;
+    font-size: 32px;
+    font-family: 'Roboto', sans-serif;
     color: #fff;
     text-align: center;
 `;
@@ -246,9 +246,9 @@ export const FourthBlock = styled.section`
     border-bottom: solid 1px #fff;
 `;
 export const TitleFourthBlock = styled.h2`
-    font-size: 30px;
+    font-size: 32px;
     margin-bottom: 80px;
-    font-family: Consolas;
+    font-family: 'Roboto', sans-serif;
     text-align: center;
     color: #fff;
     @media(max-width: 1100px){
@@ -300,9 +300,9 @@ export const FifthBlock = styled.section`
     background-color: #fff;
 `;
 export const TitleFifthBlock = styled.h2`
-    font-size: 30px;
+    font-size: 32px;
     margin-bottom: 40px;    
-    font-family: Consolas;
+    font-family: 'Roboto', sans-serif;
     text-align: center;
     color: #000;
 `;

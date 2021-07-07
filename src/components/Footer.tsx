@@ -19,7 +19,7 @@ const Footer = ()=>{
             <Line/>
             <AreaIcons>
                 <Links href="mailto: falecom@sl.arq.br" target="_blank"><EmailIcon/></Links>
-                <Links href="https://www.instagram.com/sl.auc/" target="_blank"><InstagramIcon/></Links>
+                <Links href="https://www.instagram.com/slparqt/" target="_blank"><InstagramIcon/></Links>
                 <Links  href="https://wa.me/5584933463760?text=Olá, quero solicitar um orçamento!" target="_blank"><WhatsappIcon/></Links>
             </AreaIcons>
             <TargerEnd>

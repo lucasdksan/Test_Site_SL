@@ -17,20 +17,49 @@ const linkCss = css`
 export const Container = styled.footer`
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     background-color: ${theme.colors.primay};
     width: 100%;
-    height: 280px;
+    height: 380px;
     padding: 30px 10px;
     bottom: 0px;
     right: 0px;
     left: 0px;
 `;
-export const ImgLogo = styled.img`
-    width: 100px;
-    height: 100px;
+export const Content = styled.div`
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    width: 640px;
+    padding: 10px 30px;
     margin-bottom: 30px;
+    flex: 1;
+`;
+export const InfoContent = styled.div`
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: 90%;
+    border-left-width: 3px;
+    border-left-color: ${theme.colors.secondary};
+    border-left-style: solid;
+    padding: 10px 10px;
+`;
+export const InfoText = styled.p`
+    color: ${theme.colors.secondary};
+    font-size: 21px;
+    text-align: center;
+    font-family: ${theme.fonts.font1};
+    padding: 5px 0px;
+`;
+export const ImgLogo = styled.img`
+    width: 120px;
+    height: 120px;
+    margin-right: 20px;
 `;
 export const AreaIcons = styled.div`
     display: flex;
@@ -54,7 +83,6 @@ export const TargerEnd = styled.div`
     bottom: 0px;
     right: 0px;
     left: 0px;
-    margin-bottom: auto;
     height: 30px;
     width: 100%;
     color: ${theme.colors.secondary};

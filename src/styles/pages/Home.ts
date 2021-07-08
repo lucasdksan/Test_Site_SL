@@ -287,6 +287,7 @@ export const AreaImage = styled.div`
 export const ImagesFourthBlock = styled(motion.img)`
     width: 180px;
     height: 180px;
+    fill: ${theme.colors.colorIcon};
     @media(max-width: 768px){
         width: 100px;
         height: 100px;

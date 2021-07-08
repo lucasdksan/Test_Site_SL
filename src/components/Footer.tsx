@@ -9,13 +9,26 @@ import {    Container,
             Links,
             Copyright,
             TargerEnd,
-            Text } from '../styles/components/Footer';
+            Text,
+            Content,
+            InfoContent,
+            InfoText } from '../styles/components/Footer';
 import ImgSL from '../assets/LogoOff.jpeg';
 
 const Footer = ()=>{
     return(
         <Container>
-            <ImgLogo src={ImgSL}/>
+            <Content>
+                <ImgLogo src={ImgSL}/>
+                <InfoContent>
+                    <InfoText>
+                        Bruno Lima | Arquitetura & Urbanismo
+                    </InfoText>
+                    <InfoText>
+                        CREA/RN 56984
+                    </InfoText>
+                </InfoContent>
+            </Content>
             <Line/>
             <AreaIcons>
                 <Links href="mailto: falecom@sl.arq.br" target="_blank"><EmailIcon/></Links>
@@ -30,5 +43,4 @@ const Footer = ()=>{
         </Container>
     );
 }
-//https://web.whatsapp.com/send?phone=5584933463760
 export default Footer;

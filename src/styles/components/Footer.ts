@@ -34,7 +34,7 @@ export const Content = styled.div`
     flex-direction: row;
     width: 640px;
     padding: 10px 30px;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
     flex: 1;
 `;
 export const InfoContent = styled.div`
@@ -105,6 +105,7 @@ export const TargerEnd = styled.div`
 export const Copyright = styled(AiOutlineCopyright)``;
 export const Text = styled.p`
     font-family: ${theme.fonts.font3}, Times, serif;
+    font-size: 16px;
     @media(max-width: 400px){
         display: none;
     }

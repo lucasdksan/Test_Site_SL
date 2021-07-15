@@ -36,6 +36,13 @@ export const Content = styled.div`
     padding: 10px 30px;
     margin-bottom: 20px;
     flex: 1;
+    @media(max-width: 850px){
+        width: 560px;
+        padding: 8px 25px;
+    }
+    @media(max-width: 570px){
+        display: none;
+    }
 `;
 export const InfoContent = styled.div`
     display: flex;
@@ -55,11 +62,27 @@ export const InfoText = styled.p`
     text-align: center;
     font-family: ${theme.fonts.font1};
     padding: 5px 0px;
+    @media(max-width: 850px){
+        font-size: 18px;
+    }
 `;
 export const ImgLogo = styled.img`
     width: 120px;
     height: 120px;
     margin-right: 20px;
+    @media(max-width: 850px){
+        width: 100px;
+        height: 100px;
+    }
+`;
+export const ImgLogo2 = styled.img`
+    width: 120px;
+    height: 120px;
+    margin-bottom: 20px;
+    display: none;
+    @media(max-width: 570px){
+        display: flex;
+    }
 `;
 export const AreaIcons = styled.div`
     display: flex;

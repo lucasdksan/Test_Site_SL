@@ -12,12 +12,14 @@ import {    Container,
             Text,
             Content,
             InfoContent,
-            InfoText } from '../styles/components/Footer';
+            InfoText,
+            ImgLogo2 } from '../styles/components/Footer';
 import ImgSL from '../assets/LogoOff.jpeg';
 
 const Footer = ()=>{
     return(
         <Container>
+            <ImgLogo2 src={ImgSL}/>
             <Content>
                 <ImgLogo src={ImgSL}/>
                 <InfoContent>
@@ -37,8 +39,8 @@ const Footer = ()=>{
             </AreaIcons>
             <TargerEnd>
                 <Copyright/>
-                <Text>2021 Silva & Lima. Desenvolvido por Lucas da Silva.</Text>
-                <Text className="MobileTarget">2020 Silva & Lima.</Text>
+                <Text>2021 Silva & Lima - Equipe Silva & Lima.</Text>
+                <Text className="MobileTarget">2021 Silva & Lima.</Text>
             </TargerEnd>
         </Container>
     );

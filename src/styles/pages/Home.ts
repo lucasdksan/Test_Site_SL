@@ -39,6 +39,7 @@ export const FirstBlock = styled.section`
 export const FirstBlockImg = styled(motion.img)`
     width: 250px;
     height: 250px;
+    object-fit: contain;
     @media(max-width: 768px){
         width: 200px;
         height: 200px;
@@ -348,4 +349,7 @@ export const ImageFifth = styled.img`
     width: 100%;
     height: 100%;
     object-fit: cover;
+    &:hover{
+        cursor: pointer;
+    }
 `;

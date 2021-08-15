@@ -31,6 +31,7 @@ export const FirstBlock = styled.section`
     width: 100%;
     height: 100vh;
     flex-direction: column;
+    background-position: center;
     background-image: url(${backgroundImg});
     background-repeat: no-repeat;
     background-size: cover;

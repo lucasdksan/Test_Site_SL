@@ -1,15 +1,20 @@
-import React, { useState, useEffect } from 'react';
 import Header from '../components/Header';
-import Img from '../assets/LogoOff.jpeg';
-import Imgs from '../data/PathProject';
 import UpBotton from '../components/UpButton';
+import WppButton from '../components/WppButton';
 import Footer from '../components/Footer';
 import Card from '../components/Card';
+
 import Data from '../data/CardInfo';
 import DataPath from '../data/PathImages';
+import Imgs from '../data/PathProject';
+
+import Img from '../assets/LogoOff.jpeg';
 import Animation from '../assets/icons/Business.json';
+
 import Lottie from 'react-lottie';
 import { useWindowScroll } from 'react-use';
+import { useState, useEffect } from 'react';
+
 import {    Container, 
             Content, 
             FirstBlock, 
@@ -196,6 +201,7 @@ const Home = ()=>{
                     </ContentFifthBlock>
                 </FifthBlock>
             </Content>
+            <WppButton/>
             <UpBotton/>
             <Footer/>
         </Container>

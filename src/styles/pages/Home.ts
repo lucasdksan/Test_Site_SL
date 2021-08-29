@@ -336,21 +336,25 @@ export const ContentFifthBlock = styled.div`
     }
 `;
 export const ImageContent = styled.div`
-    width: 200px;
-    height: 200px;
+    width: 220px;
+    height: 220px;
     display: flex;
     align-items: center;
     justify-content: center;
+    box-shadow: 10px 16px 10px #0000004b;
     @media(max-width: 768px){
-        width: 120px;
-        height: 120px;
+        width: 125px;
+        height: 125px;
     }
 `;
 export const ImageFifth = styled.img`
     width: 100%;
     height: 100%;
     object-fit: cover;
+    transition: 0.2s linear;
     &:hover{
         cursor: pointer;
+        transform: scale(1.2);
+        box-shadow: 0 0 20px 5px ${theme.colors.primay}; 
     }
 `;

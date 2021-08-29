@@ -14,7 +14,6 @@ import {    Container,
             Content, 
             FirstBlock, 
             FirstBlockImg,
-            FirstBlocText,
             SecondBlock,
             TextAreaSecondBlock,
             TitleSecondBlock,
@@ -133,22 +132,6 @@ const Home = ()=>{
                             scale: 1.08,
                         }}
                     />
-                    <FirstBlocText
-                        initial={{
-                            y: 100,
-                            opacity: 0,
-                        }}
-                        animate={{
-                            y: 0,
-                            opacity: [0, 0.2, 0.5, 0.8, 1],
-                        }}
-                        transition={{
-                            type: 'spring',
-                            stiffness: 40,
-                        }}
-                    >
-                        Participações em Projetos de Arquitetura, Urbanismo e Construções Civis
-                    </FirstBlocText>
                 </FirstBlock>
                 {
                     SecondBlockAnimate()

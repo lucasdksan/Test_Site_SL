@@ -29,7 +29,7 @@ export const FirstBlock = styled.section`
     align-items: center;
     justify-content: center;
     width: 100%;
-    height: 100vh;
+    height: calc(100vh - 70px);
     flex-direction: bottom;
     background-position: center;
     background-image: url(${backgroundImg});
@@ -64,7 +64,7 @@ export const SecondBlock = styled(motion.section)`
     justify-content: flex-start;
     padding: 30px 5px;
     width: 100%;
-    height: 100vh;
+    height: calc(100vh - 70px);
     background-color: ${theme.colors.secondary};
     @media(max-width: 550px){
         padding: 20px 5px;
@@ -157,7 +157,7 @@ export const ThirdBlock = styled.section`
     justify-content: flex-start;
     padding: 30px 10px;
     width: 100%;
-    height: 100vh;
+    height: calc(100vh - 70px);
     background-color: ${theme.colors.primay};
     @media(max-width: 1090px){
         justify-content: space-evenly;
@@ -304,7 +304,7 @@ export const FifthBlock = styled.section`
     padding: 35px 10px;
     margin-bottom: 10px;
     width: 100%;
-    height: 100vh;
+    height: calc(100vh - 70px);
     background-color: ${theme.colors.secondary};
 `;
 export const TitleFifthBlock = styled.h2`

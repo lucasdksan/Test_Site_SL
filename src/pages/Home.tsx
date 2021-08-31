@@ -71,7 +71,7 @@ const Home = ()=>{
                 setScaleY(220);
             }
         },[width]);
-        if(pageYOffset < 150){
+        if(pageYOffset < 80){
             return(
                 <SecondBlock
                     initial={{

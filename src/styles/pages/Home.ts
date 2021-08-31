@@ -248,7 +248,6 @@ export const FourthBlock = styled.section`
     align-items: center;
     justify-content: center;
     width: 100%;
-    height: 100%;
     padding: 40px 0;
     background-color: ${theme.colors.colorText1};
     border-bottom: solid 1px ${theme.colors.secondary};

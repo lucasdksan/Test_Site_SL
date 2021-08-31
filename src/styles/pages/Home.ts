@@ -30,9 +30,10 @@ export const FirstBlock = styled.section`
     justify-content: center;
     width: 100%;
     height: 100vh;
-    flex-direction: column;
+    flex-direction: bottom;
     background-position: center;
     background-image: url(${backgroundImg});
+    background-color: ${theme.colors.colorIcon};
     background-repeat: no-repeat;
     background-size: cover;
     padding: 40px 30px;

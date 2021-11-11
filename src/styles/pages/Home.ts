@@ -33,7 +33,6 @@ export const FirstBlock = styled.section`
     flex-direction: column;
     background-position: center;
     background-image: url(${backgroundImg});
-    background-color: ${theme.colors.colorIcon};
     background-repeat: no-repeat;
     background-size: cover;
     padding: 40px 30px;

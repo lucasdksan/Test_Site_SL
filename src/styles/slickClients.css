@@ -1,0 +1,24 @@
+#clients .slick-dots {
+    bottom: -35px !important;
+}
+
+#clients .slick-dots li {
+    width: 12px;
+    height: 12px;
+    margin: 0 10px;
+}
+
+#clients .slick-dots li button {
+    width: 12px;
+    height: 12px;
+    background-color: #ddd;
+    border-radius: 100%;
+}
+
+#clients .slick-dots li.slick-active button {
+    background-color: black;
+}
+
+#clients .slick-dots li button::before {
+    content: none;
+}
